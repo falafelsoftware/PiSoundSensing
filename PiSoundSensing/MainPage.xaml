@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="PiSoundSensing.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PiSoundSensing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical" Margin="25,0">
+            <TextBlock x:Name="txtStatus" Margin="0,25,0,0">Configuring ...</TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="0,25,0,0">
+                <Button x:Name="btnStartSampling" Height="75" Width="75" Background="LightGreen" Margin="0,0,50,0" IsEnabled="False" Click="btnStartSampling_Click">Start</Button>
+                <Button x:Name="btnEndSampling" Height="75" Width="75" Background="#FFFF505D" IsEnabled="False" Click="btnEndSampling_Click">End</Button>
+            </StackPanel>
+            <TextBlock Margin="0,25,0,0">Volume:</TextBlock>
+            <ProgressBar x:Name="pbVolume" Background="#7F9AF1EF" Height="33" Foreground="#FF1F0C9D" />
+        </StackPanel>
+    </Grid>
+</Page>
